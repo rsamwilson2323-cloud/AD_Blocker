@@ -1,0 +1,2 @@
+# Domains that must never be blocked, even if a parent domain is on a blocklist. Add your own via the app.
+# (Empty by default; the app's allowlist is stored in %ProgramData%\AdBlocker\user-allow.txt)

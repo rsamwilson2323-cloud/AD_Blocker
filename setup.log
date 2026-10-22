@@ -1,0 +1,76 @@
+
+===== Run started 16-10-2026 20.58.53.52 =====
+
+===== Run started 16-10-2026 20.58.56.05 =====
+16-10-2026 20.58.56.07 [1/6] Checking required files
+16-10-2026 20.58.56.14 [OK] .NET SDK detected
+16-10-2026 20.58.56.15 [3/6] Building projects
+16-10-2026 20.59.05.86 [OK] Build files are present
+16-10-2026 20.59.11.05 [OK] Engine reports Active
+16-10-2026 20.59.11.17 [OK] Setup completed with Active status
+
+===== Run started 16-10-2026 21.32.37.75 =====
+
+===== Run started 16-10-2026 21.32.39.45 =====
+16-10-2026 21.32.39.47 [1/6] Checking required files
+16-10-2026 21.32.39.54 [OK] .NET SDK detected
+16-10-2026 21.32.39.54 [3/6] Building projects
+16-10-2026 21.32.50.15 [OK] Build files are present
+16-10-2026 21.32.55.80 [OK] Engine reports Active
+16-10-2026 21.32.58.21 [OK] Setup completed with Active status
+
+===== Run started 17-10-2026 11.54.19.95 =====
+
+===== Run started 17-10-2026 11.54.21.39 =====
+17-10-2026 11.54.21.42 [1/6] Checking required files
+17-10-2026 11.54.21.49 [OK] .NET SDK detected
+17-10-2026 11.54.21.50 [3/6] Building projects
+17-10-2026 11.54.31.94 [OK] Build files are present
+17-10-2026 11.54.35.27 [ERROR] sc start failed
+17-10-2026 11.54.35.27 Setup failed
+
+===== Run started 17-10-2026 12.00.25.68 =====
+
+===== Run started 17-10-2026 12.00.27.38 =====
+17-10-2026 12.00.27.40 [1/6] Checking required files
+17-10-2026 12.00.27.47 [OK] .NET SDK detected
+17-10-2026 12.00.27.48 [3/6] Building projects
+17-10-2026 12.00.29.44 [OK] Build files are present
+17-10-2026 12.00.32.59 [ERROR] sc start failed
+17-10-2026 12.00.32.59 Setup failed
+
+===== Run started 22-10-2026 21.38.00.57 =====
+
+===== Run started 22-10-2026 21.38.02.07 =====
+22-10-2026 21.38.02.08 [1/6] Checking required files
+22-10-2026 21.38.02.15 [OK] .NET 8 SDK detected
+22-10-2026 21.38.02.15 [2/6] Building projects
+22-10-2026 21.38.07.58 [OK] Build files are present
+22-10-2026 21.38.08.55 [4/6] Installing/updating service; DNS_ARG=
+22-10-2026 21.38.21.13 [OK] Windows service is running
+22-10-2026 21.38.21.53 [OK] Engine reports Active
+22-10-2026 21.38.22.27 [OK] Setup completed with Active status
+
+===== Run started 22-10-2026 21.38.42.98 =====
+
+===== Run started 22-10-2026 21.38.44.29 =====
+22-10-2026 21.38.44.32 [1/6] Checking required files
+22-10-2026 21.38.44.38 [OK] .NET 8 SDK detected
+22-10-2026 21.38.44.38 [2/6] Building projects
+22-10-2026 21.38.46.35 [OK] Build files are present
+22-10-2026 21.38.47.43 [4/6] Installing/updating service; DNS_ARG=
+22-10-2026 21.38.50.53 [OK] Windows service is running
+22-10-2026 21.38.50.82 [OK] Engine reports Active
+22-10-2026 21.38.50.84 [OK] Setup completed with Active status
+
+===== Run started 22-10-2026 21.39.28.75 =====
+
+===== Run started 22-10-2026 21.39.30.08 =====
+22-10-2026 21.39.30.11 [1/6] Checking required files
+22-10-2026 21.39.30.17 [OK] .NET 8 SDK detected
+22-10-2026 21.39.30.18 [2/6] Building projects
+22-10-2026 21.39.33.32 [OK] Build files are present
+22-10-2026 21.39.34.69 [4/6] Installing/updating service; DNS_ARG=
+22-10-2026 21.39.46.22 [OK] Windows service is running
+22-10-2026 21.39.46.63 [OK] Engine reports Active
+22-10-2026 21.39.46.75 [OK] Setup completed with Active status

@@ -1,0 +1,55 @@
+<Window x:Class="AdBlocker.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AdBlocker" Width="470" Height="500" MinWidth="430" MinHeight="460"
+        ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Background="#0B1020" FontFamily="Segoe UI" Foreground="#F3F5FF">
+  <Grid Margin="22">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center">
+      <Border Width="44" Height="44" CornerRadius="14" Background="#6D5DFB" VerticalAlignment="Center">
+        <TextBlock Text="A" FontSize="27" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+      </Border>
+      <StackPanel Margin="12,0,0,0" VerticalAlignment="Center">
+        <TextBlock Text="AdBlocker" FontSize="23" FontWeight="Bold"/>
+        <TextBlock Text="Lightweight protection dashboard" FontSize="12" Foreground="#9BA6C7" Margin="0,2,0,0"/>
+      </StackPanel>
+    </StackPanel>
+
+    <Border Grid.Row="1" Margin="0,24,0,0" Padding="18" CornerRadius="18" Background="#151D33" BorderBrush="#293454" BorderThickness="1">
+      <StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+          <Ellipse x:Name="StatusDot" Width="10" Height="10" Fill="#F4B942" Margin="0,0,9,0"/>
+          <TextBlock x:Name="StateText" Text="Checking protection…" FontSize="17" FontWeight="SemiBold"/>
+        </StackPanel>
+        <TextBlock x:Name="StateDetail" Text="Connecting to the background engine" Foreground="#9BA6C7" FontSize="12" Margin="19,5,0,0" TextWrapping="Wrap"/>
+        <Grid Margin="0,22,0,0">
+          <Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition/></Grid.ColumnDefinitions>
+          <StackPanel>
+            <TextBlock Text="PROTECTION TIME" FontSize="10" Foreground="#9BA6C7" FontWeight="SemiBold"/>
+            <TextBlock x:Name="TimerText" Text="00:00:00" FontSize="27" FontWeight="Bold" Margin="0,3,0,0"/>
+          </StackPanel>
+          <StackPanel Grid.Column="1" HorizontalAlignment="Right">
+            <TextBlock Text="BLOCKED REQUESTS (DNS + CHROME)" FontSize="10" Foreground="#9BA6C7" FontWeight="SemiBold"/>
+            <TextBlock x:Name="BlockedText" Text="0" FontSize="27" FontWeight="Bold" Margin="0,3,0,0" HorizontalAlignment="Right"/>
+          </StackPanel>
+        </Grid>
+      </StackPanel>
+    </Border>
+
+    <Button x:Name="ToggleBtn" Grid.Row="2" Content="Stop protection" Click="OnToggle" Height="48" Margin="0,16,0,0"
+            Background="#6D5DFB" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Bold" Cursor="Hand"/>
+    <TextBlock Grid.Row="3" x:Name="DnsText" Text="System DNS: checking…" Foreground="#B6C0DD" FontSize="12" Margin="2,12,2,0" TextWrapping="Wrap"/>
+    <Border Grid.Row="4" Background="#151D33" CornerRadius="12" Padding="12" Margin="0,14,0,0">
+      <StackPanel>
+        <TextBlock Text="Browser protection" FontSize="13" FontWeight="SemiBold"/>
+        <TextBlock x:Name="BrowserText" Text="Chrome extension status: checking…" FontSize="12" Foreground="#B6C0DD" TextWrapping="Wrap" Margin="0,4,0,0"/>
+        <Button Content="Open Chrome extension settings" Click="OnOpenExtensions" HorizontalAlignment="Left" Margin="0,8,0,0" Padding="0" Background="Transparent" BorderThickness="0" Foreground="#A99FFF" FontSize="12" Cursor="Hand"/>
+      </StackPanel>
+    </Border>
+    <TextBlock Grid.Row="5" Text="The background service keeps running when this window or the setup BAT closes. YouTube in-stream ads cannot be guaranteed blocked; video ads may share delivery servers with normal video." Foreground="#7784A8" FontSize="10.5" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="2,14,2,0"/>
+  </Grid>
+</Window>

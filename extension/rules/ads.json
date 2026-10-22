@@ -1,0 +1,242 @@
+[
+ {
+  "id": 1,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "requestDomains": [
+    "doubleclick.net",
+    "googlesyndication.com",
+    "googleadservices.com",
+    "adservice.google.com",
+    "2mdn.net",
+    "adnxs.com",
+    "adsrvr.org",
+    "advertising.com",
+    "amazon-adsystem.com",
+    "taboola.com",
+    "outbrain.com",
+    "criteo.com",
+    "criteo.net",
+    "rubiconproject.com",
+    "pubmatic.com",
+    "openx.net",
+    "casalemedia.com",
+    "indexww.com",
+    "smartadserver.com",
+    "adform.net",
+    "teads.tv",
+    "media.net",
+    "yieldmo.com",
+    "sharethrough.com",
+    "lijit.com",
+    "33across.com",
+    "bidswitch.net",
+    "contextweb.com",
+    "serving-sys.com",
+    "adtechus.com",
+    "zedo.com",
+    "revcontent.com",
+    "mgid.com",
+    "adcolony.com",
+    "applovin.com",
+    "inmobi.com",
+    "smaato.net",
+    "mopub.com",
+    "tapad.com",
+    "adroll.com",
+    "undertone.com",
+    "spotxchange.com",
+    "spotx.tv",
+    "adition.com",
+    "gumgum.com",
+    "triplelift.com",
+    "conversantmedia.com",
+    "sovrn.com",
+    "districtm.io",
+    "bluekai.com",
+    "adblade.com",
+    "yieldlab.net",
+    "improvedigital.com",
+    "admixer.net",
+    "adscale.de",
+    "ads.yahoo.com",
+    "advertising.yahoo.com",
+    "google-analytics.com",
+    "analytics.google.com",
+    "hotjar.com",
+    "mixpanel.com",
+    "api.segment.io",
+    "amplitude.com",
+    "fullstory.com",
+    "mouseflow.com",
+    "crazyegg.com",
+    "chartbeat.com",
+    "scorecardresearch.com",
+    "quantserve.com",
+    "moatads.com",
+    "demdex.net",
+    "omtrdc.net",
+    "2o7.net",
+    "krxd.net",
+    "everesttech.net",
+    "bat.bing.com",
+    "px.ads.linkedin.com",
+    "analytics.twitter.com",
+    "static.ads-twitter.com",
+    "ads-api.twitter.com",
+    "analytics.tiktok.com",
+    "ads.tiktok.com",
+    "analytics.yahoo.com",
+    "ct.pinterest.com",
+    "ads.pinterest.com",
+    "tr.snapchat.com",
+    "stats.wp.com",
+    "adobedtm.com",
+    "heap.io",
+    "heapanalytics.com",
+    "luckyorange.com",
+    "statcounter.com"
+   ],
+   "resourceTypes": [
+    "sub_frame",
+    "script",
+    "image",
+    "stylesheet",
+    "font",
+    "object",
+    "xmlhttprequest",
+    "ping",
+    "media",
+    "websocket",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 2,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "requestDomains": [
+    "popads.net",
+    "popcash.net",
+    "propellerads.com",
+    "exoclick.com",
+    "juicyads.com",
+    "trafficjunky.net",
+    "adsterra.com",
+    "hilltopads.net",
+    "clickadu.com"
+   ],
+   "resourceTypes": [
+    "main_frame",
+    "sub_frame",
+    "script",
+    "image",
+    "stylesheet",
+    "font",
+    "object",
+    "xmlhttprequest",
+    "ping",
+    "media",
+    "websocket",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 3,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "||youtube.com/pagead/",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "image",
+    "script",
+    "ping",
+    "sub_frame",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 4,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "||youtube.com/api/stats/ads",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "image",
+    "script",
+    "ping",
+    "sub_frame",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 5,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "||youtube.com/get_midroll_info",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "image",
+    "script",
+    "ping",
+    "sub_frame",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 6,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "||youtube.com/ad_data_204",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "image",
+    "script",
+    "ping",
+    "sub_frame",
+    "other"
+   ]
+  }
+ },
+ {
+  "id": 7,
+  "priority": 1,
+  "action": {
+   "type": "block"
+  },
+  "condition": {
+   "urlFilter": "||youtube.com/pcs/activeview",
+   "resourceTypes": [
+    "xmlhttprequest",
+    "image",
+    "script",
+    "ping",
+    "sub_frame",
+    "other"
+   ]
+  }
+ }
+]

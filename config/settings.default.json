@@ -1,0 +1,10 @@
+{
+  "dnsFilteringEnabled": true,
+  "applySystemDns": false,
+  "upstreamDns": ["1.1.1.1", "9.9.9.9"],
+  "listenAddress": "127.0.0.1",
+  "listenPort": 53,
+  "controlPort": 47653,
+  "upstreamTimeoutMs": 2000,
+  "nullIpMode": false
+}

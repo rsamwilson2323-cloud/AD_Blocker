@@ -1,0 +1,10 @@
+# Pop-up / pop-under / redirect ad networks. In the browser extension these are also blocked as top-level navigations.
+popads.net
+popcash.net
+propellerads.com
+exoclick.com
+juicyads.com
+trafficjunky.net
+adsterra.com
+hilltopads.net
+clickadu.com

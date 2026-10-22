@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "AdBlocker (browser component)",
+  "version": "0.2.3",
+  "description": "Ad and tracking request filtering with best-effort YouTube ad skipping and visual suppression; complete blocking cannot be guaranteed.",
+  "minimum_chrome_version": "111",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage",
+    "alarms",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:47653/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "adblocker_ads",
+        "enabled": true,
+        "path": "rules/ads.json"
+      }
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "AdBlocker: click to pause/resume on this site"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content/cosmetic.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://m.youtube.com/*"
+      ],
+      "js": [
+        "lib/prune.js",
+        "content/youtube-main.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://m.youtube.com/*"
+      ],
+      "js": [
+        "content/youtube-isolated.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
